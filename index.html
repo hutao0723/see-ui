@@ -22,13 +22,39 @@
 </head>
 <body>
     <div id="app">
+
+
         <h6>ICON组件</h6>
         <div class="page_icon">
                 <s-icon name="setting"></s-icon>
                 <s-icon name="zan"></s-icon>
                 <s-icon name="loading"></s-icon>
                 <s-icon name="down"></s-icon>
+        </div> 
+
+
+
+        <h6>BUTTON组件</h6>
+        <div class="page_button">
+            <s-button>按钮</s-button>
+            <s-button icon='setting'>按钮</s-button>
+            <s-button icon='setting' icon-position='right'>按钮</s-button>
+            <s-button :loading=true>按钮</s-button>
+            <s-button :loading="buttonLoading" @click="buttonLoading = !buttonLoading" >点我</s-button>
+            <s-button-group>
+                <s-button>上一页</s-button>
+                <s-button>下一页</s-button>
+            </s-button-group>
+            <s-button-group>
+                <s-button>上一页</s-button>
+                <s-button>1</s-button>
+                <s-button>2</s-button>
+                <s-button>3</s-button>
+                <s-button>4</s-button>
+                <s-button>下一页</s-button>
+            </s-button-group>
         </div>
+       
     </div>
 </body>
 <script src="./src/app.js" ></script>
