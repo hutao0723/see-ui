@@ -1,7 +1,7 @@
 <template>
-    <button class="eye-button" @click="$emit('click')">
-        <eye-icon :name="icon" :class="['icon',`${iconPosition}`]" v-if="icon && !loading"></eye-icon>
-        <eye-icon name="loading" :class="['loading',`${iconPosition}`]" v-if="loading"></eye-icon>
+    <button class="s-button" @click="$emit('click')">
+        <s-icon :name="icon" :class="['icon',`${iconPosition}`]" v-if="icon && !loading"></s-icon>
+        <s-icon name="loading" :class="['loading',`${iconPosition}`]" v-if="loading"></s-icon>
         <span class="conetnt">
             <slot></slot>
         </span>
@@ -10,9 +10,9 @@
 <script>
     import Icon from "./icon.vue";
     export default {
-        name:"eyeButton",  
+        name:"s-Button",  
         components:{
-            "eye-icon":Icon
+            "s-icon":Icon
         },
         props:{
             icon:{},
@@ -35,7 +35,7 @@
         0%{transform: rotate(0)}
         100%{transform: rotate(360deg)}
     }
-    .eye-button{
+    .s-button{
         margin: 0 5px;
         outline: none;
         vertical-align: middle;

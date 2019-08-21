@@ -1,12 +1,12 @@
 <template>
-    <div class="button-group">
+    <div class="s-button-group">
         <slot />
     </div>
 </template>
 
 <script>
 export default {
-    name:'button-group',  
+    name:'s-button-group',  
     mounted(){
         let nodeList = this.$el.children
         if(nodeList.length != 0){
@@ -24,11 +24,11 @@ export default {
 
 <style lang="less" >
     @import url("./../assets/style.less");
-    .button-group{
+    .s-button-group{
         display: inline-flex;
         vertical-align: middle;
         font-size: 0;
-        .eye-button{
+        .s-button{
             margin-left: -1px;
             border-radius: 0;
             margin-right: 0;
