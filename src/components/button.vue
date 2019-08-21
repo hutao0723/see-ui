@@ -51,7 +51,7 @@
         justify-content: center;
         align-items: center;
         &:hover{
-            border-color: #1890ff;
+            border-color: @border-color-hover;
             color: #1890ff;
         }
         &:active{

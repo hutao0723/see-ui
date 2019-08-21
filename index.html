@@ -54,6 +54,17 @@
                 <s-button>下一页</s-button>
             </s-button-group>
         </div>
+
+        <h6>INPUT组件</h6>
+        <div class="page_input">
+            <s-input value="1231"></s-input>
+            <s-input value="disabled" disabled></s-input>
+            <s-input value="error" error="用户名不能为空"></s-input>
+            <s-input value="chang事件" @change="inputChange"></s-input>
+            <s-input value="input事件" @input="inputInput"></s-input>
+            <s-input value="blur事件" @blur="inputBulr"></s-input>
+            <s-input value="focus事件" @focus="inputFocus"></s-input>
+        </div> 
        
     </div>
 </body>
