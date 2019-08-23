@@ -3,6 +3,8 @@ import Icon from "./components/icon.vue";
 import Button from "./components/button.vue";
 import ButtonGroup from "./components/button-group.vue";
 import Input from "./components/input.vue";
+import Row from "./components/row.vue";
+import Col from "./components/col.vue";
 
 new Vue({
     el:"#app",
@@ -11,6 +13,8 @@ new Vue({
         "s-button":Button,
         "s-button-group":ButtonGroup,
         "s-input":Input,
+        "s-row":Row,
+        "s-col":Col,
     },
     data(){
         return {

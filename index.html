@@ -17,6 +17,13 @@
         padding: 10px;
         font-size: 18px;
     }
+    .page_grid .s-row .s-col div{
+        background: rgba(0,153,229,.7);  
+        padding: 10px 0;  
+    }
+    .page_grid .s-row .s-col:nth-child(2n) div{
+        background: rgba(0,153,229,.9);
+    }
     </style>
     <title>Document</title>
 </head>
@@ -66,6 +73,70 @@
             <s-input value="focus事件" @focus="inputFocus"></s-input>
         </div> 
        
+        
+        <h6>栅格栏布局</h6>
+        <div class="page_grid">
+            <s-row>
+                <s-col span="22" >
+                    <div>22</div>
+                </s-col>
+                <s-col span="2" >
+                    <div>2</div>
+                </s-col>
+            </s-row>
+            <s-row>
+                <s-col span="12" >
+                    <div>12</div>
+                </s-col>
+                <s-col span="12" >
+                    <div>12</div>
+                </s-col>
+            </s-row>
+            <s-row>
+                <s-col span="4" offset="2">
+                    <div>带有offset</div>
+                </s-col>
+                <s-col span="4" offset="2">
+                    <div>带有offset</div>
+                </s-col>
+                <s-col span="4" offset="2">
+                    <div>带有offset</div>
+                </s-col>
+                <s-col span="4" offset="2">
+                    <div>带有offset</div>
+                </s-col>
+            </s-row>
+            <s-row gutter="20">
+                <s-col span="6">
+                    <div>带有gutter</div>
+                </s-col>
+                <s-col span="6">
+                    <div>带有gutter</div>
+                </s-col>
+                <s-col span="6">
+                    <div>带有gutter</div>
+                </s-col>
+                <s-col span="6">
+                    <div>带有gutter</div>
+                </s-col>
+            </s-row>
+
+            <s-row gutter="10">
+                <s-col :xs="20" :sm="6" :md="10" :lg="2" :xl="4">
+                    <div>响应式</div>
+                </s-col>
+                <s-col :xs="1" :sm="6" :md="2" :lg="10" :xl="8">
+                    <div>响应式</div>
+                </s-col>
+                <s-col :xs="2" :sm="6" :md="2" :lg="10" :xl="8">
+                    <div>响应式</div>
+                </s-col>
+                <s-col :xs="1" :sm="6" :md="10" :lg="2" :xl="4">
+                    <div>响应式</div>
+                </s-col>
+            </s-row>
+        </div>
+
     </div>
 </body>
 <script src="./src/app.js" ></script>
